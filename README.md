@@ -32,7 +32,7 @@ The data is available for free download and can be consulted in the following "[
 
 The data source was classified as reliable because it comes from a primary source. The company that provides the service is responsible for collecting the data and storing it for later analysis.
 
-## Prepare data for analysis**
+## Prepare data for analysis
 
 It was necessary to convert the files from .csv to .xlsx to run the analysis in the spreadsheet program.
 
@@ -70,7 +70,7 @@ Seven new columns with basic metrics were added to facilitate the identification
 1. ride_length: To calculate the duration of the trips, the operation of subtracting the “ended_at” column from “started_at” was performed.
 - It was decided to eliminate those trips with a duration of 0 seconds and negative values to avoid information that did not add value or affect the analysis.
 2. Day of week: the formula “=WEEKDAY(C:C,1)” was applied to record the day of the week on which said trip was executed, where 1 is equivalent to Sunday and 7 to Saturday.
-3. # of trips: the formula “=COUNT(O:O)” was used to determine the total number of trips made, as well as the formulas “=COUNTIF(M:M,"MEMBER")” and “=COUNTIF(M: M,"casual")” to determine how many of those trips were taken by members and casual customers.
+3. #of trips: the formula “=COUNT(O:O)” was used to determine the total number of trips made, as well as the formulas “=COUNTIF(M:M,"MEMBER")” and “=COUNTIF(M: M,"casual")” to determine how many of those trips were taken by members and casual customers.
 4. avg_ride_length: This column added the average length of total trips, as well as trips taken by members and casual customers. The formulas used in this column were: “=AVERAGE(N:N)”, “=AVERAGEIF(M:M, "member",N:N)” and “=AVERAGEIF(M:M,"casual", N: N)” respectively.
 5. Most_common_day: “=MODE(O:O)” was used to find the day of the week with the most total trips. A small table was also added to count the number of trips made per day and segment by the type of customer (member or casual), this was carried out using the formula “=COUNTIFS”.
 6. Members% and casual%: in this pair of columns a division was made between the number of clients according to their type and the total number of trips made, to have a clearer idea of the percentage that each type of client represents.
@@ -78,7 +78,7 @@ Seven new columns with basic metrics were added to facilitate the identification
 8. Finally, a pivot table was added in a different sheet (Avg ride_length p/d), with the average trip duration according to the day and type of customer.
 All of these analyses helped us better understand user behaviors depending on the day and type of customer.
 
-## Data frame analysis.
+## Data frame analysis
 
 **All data**
 
